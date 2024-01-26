@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#a Bash script that displays numbers from 1 to 100
+i=1
+
+while [ $i -le 100 ]
+do
+	res=$((i % 3))
+	res5=$((i % 5))
+	if [ $res -eq 0 ] && [ $res5 -eq 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $res -eq 0 ]
+	then
+		echo "Fizz"
+	elif [ $res5 -eq 0 ]
+	then
+		echo "Buzz"
+	else
+	echo "$i"
+	fi
+	((i++))
+done
