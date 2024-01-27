@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Write a Bash script that kill processes
+my_script="7-highlander"
+mypros=$(pgrep -f "$my_script")
+for pid in $mypros; do
+	kill -9 "$pid"
+done
