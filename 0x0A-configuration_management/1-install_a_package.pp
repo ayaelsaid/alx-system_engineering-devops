@@ -4,8 +4,9 @@ package { 'python3':
 }
 
 exec { 'flask_installed':
-  command => 'pip3 list | grep -q Flask',
+  command => 'pip3 list | grep Flask',
   path    => '/usr/bin',
+  unless   => 'pip3 list | grep -q Flask',
   require => Package['python3'],
 }
 
