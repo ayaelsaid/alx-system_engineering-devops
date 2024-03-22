@@ -6,3 +6,4 @@ class kill_process {
     refreshonly => true,
     }
 }
+include kill_process
