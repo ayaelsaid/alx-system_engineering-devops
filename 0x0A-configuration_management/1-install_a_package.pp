@@ -6,4 +6,6 @@ package { 'python3':
 package { 'Flask':
   ensure   => '2.1.0',
   provider => 'pip3',
+  path     => '/bin',
+  require  => Package['python3'],
 }
