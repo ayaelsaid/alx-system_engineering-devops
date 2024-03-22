@@ -2,7 +2,7 @@
 class kill_process {
 
   exec { 'kill_killmenow':
-    command => '/bin/pkill killmenow',
-    refreshonly => true, 
-  }
+    command     => '/bin/pkill killmenow',
+    refreshonly => true,
+    }
 }
