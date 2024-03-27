@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#Install nginx web server
+
+sudo apt-get update
+sudo apt-get install nginx -y
+echo "server {
+    listen 80;
+    server_name web01.com www.web01.com;i
+    location / {
+        echo 'Hello World!';
+    }
+}" | sudo tee /etc/nginx/sites-available/example.com > /dev/null
+
+sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+sudo ufw allow 80/tcp
+sudo service nginx start
