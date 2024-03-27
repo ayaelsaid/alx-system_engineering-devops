@@ -3,7 +3,17 @@
 
 sudo apt-get update
 sudo apt-get install -y nginx
-sudo chown -R ubuntu /var/www
-echo "Hello World" > /var/www/html/index.nginx-debian.html
-sudo ufw allow 80/tcp
+sudo sed -i 's/listen 80 default_server;/listen 80;/g' /etc/nginx/sites-available/default
 sudo service nginx start
+sudo cat <<EOF | sudo tee /var/www/html/index.html > /dev/null
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World!</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+</body>
+</html>
+EOF
+sudo service nginx restart
