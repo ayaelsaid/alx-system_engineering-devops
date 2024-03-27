@@ -2,18 +2,7 @@
 #Install nginx web server
 
 sudo apt-get update
-sudo apt-get install -y nginx
-sudo sed -i 's/listen 80 default_server;/listen 80;/g' /etc/nginx/sites-available/default
-sudo service nginx start
-sudo cat <<EOF | sudo tee /var/www/html/index.html > /dev/null
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello World!</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
-</html>
-EOF
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo bash -c 'echo "Hello World!" > /var/www/html/index.html'
 sudo service nginx restart
