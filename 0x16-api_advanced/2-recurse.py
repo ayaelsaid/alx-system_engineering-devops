@@ -26,4 +26,4 @@ def recurse(subreddit, hot_list=[], after=None):
         else:
             return None
     except requests.exceptions.RequestException as e:
-        return None  # Return None if an error occurs during the request
+        return None
