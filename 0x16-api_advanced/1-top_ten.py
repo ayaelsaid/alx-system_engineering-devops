@@ -21,6 +21,6 @@ def top_ten(subreddit):
                 my_title = post['data']['title']
                 print(my_title)
         else
-            print ("None")
+            print("None")
     except requests.exceptions.RequestException as e:
         print("None")
