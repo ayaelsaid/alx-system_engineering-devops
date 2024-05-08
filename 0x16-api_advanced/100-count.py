@@ -1,4 +1,8 @@
+#!/usr/bin/python3
+"""Function to count words in all hot posts"""
+
 import requests
+
 
 def count_words(subreddit, word_list, after=None, counts=None):
     if counts is None:
