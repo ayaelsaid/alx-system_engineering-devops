@@ -4,10 +4,11 @@
 recursive function that queries"""
 import requests
 
-def recurse(subreddit, hot_list=[]):
-  url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
-  headers = {'User-Agent': 'u/thisisinsider'}
 
+def recurse(subreddit, hot_list=[]):
+  
+  url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
+  headers = {'User-Agent':'u/thisisinsider'}
   try:
     response = requests.get(url, headers=headers)
     response.raise_for_status()
