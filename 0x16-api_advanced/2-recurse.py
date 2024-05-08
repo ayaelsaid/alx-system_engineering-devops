@@ -9,7 +9,6 @@ import requests
 def recurse(subreddit, hot_list=[], after=None):
     url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
     headers = {'User-Agent': 'u/thisisinsider'}
-    
     try:
         response = requests.get(url, headers=headers)
         response.raise_for_status()
