@@ -1,10 +1,20 @@
 #!/usr/bin/python3
-"""Function to count words in all hot posts"""
+"""
+Function to count words in all hot posts
+"""
 
 import requests
 
 
 def count_words(subreddit, word_list, after=None, counts=None):
+    """Prints counts of given words found in hot posts.
+    Args:
+        subreddit (str): The subreddit
+        word_list (list): The list of words to search for in post titles.
+        after (str): The parameter for the next page of the API
+        count (int): The parameter of results
+    """
+
     if counts is None:
         counts = {}
 
