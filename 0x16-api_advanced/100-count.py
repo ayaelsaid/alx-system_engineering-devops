@@ -6,7 +6,7 @@ Function to count words in all hot posts
 import requests
 
 
-def count_words(subreddit, word_list, after=None, counts=None):
+def count_words(subreddit, word_list[], after=None, counts=None):
     """Prints counts of given words found in hot posts.
     Args:
         subreddit (str): The subreddit
