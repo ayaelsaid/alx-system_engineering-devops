@@ -1,6 +1,8 @@
 
 # Postmortem Report
 -------------------
+![500 ERROR TO ACCESS IT IS SO EASY](https://github.com/ayaelsaid/alx-system_engineering-devops/blob/master/0x19-postmortem/Untitled.jpeg)
+
 **[Report for Error 500](https://github.com/ayaelsaid/alx-system_engineering-devops/tree/master/0x17-web_stack_debugging_3)**
 
 ## Issue Summary:
