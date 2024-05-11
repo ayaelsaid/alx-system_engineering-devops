@@ -4,9 +4,9 @@
 
 ## Issue Summary:
 -----------------
-**•	Duration:** May 10, 2024
-**•	Impact:** Users experienced access issues with WordPress websites, receiving Apache 500 errors.
-**•	Root Cause:** Incorrect PHP file extension in the WordPress settings file (/var/www/html/wp-settings.php) led to server errors.
+**•	Duration:** May 10, 2024  
+**•	Impact:** Users experienced access issues with WordPress websites, receiving Apache 500 errors.  
+**•	Root Cause:** Incorrect PHP file extension in the WordPress settings file (/var/www/html/wp-settings.php) led to server errors.  
 ## Timeline:
 -------------
 **•	00:05 PDT:** Users encountered errors when accessing the site.
